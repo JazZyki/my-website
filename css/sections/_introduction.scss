@@ -1,0 +1,27 @@
+.section-introduction {
+    .modal-wrapper {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-content {
+        background-color: $basicBlack;
+        color: $white;
+
+        h3 {
+            font-size: 2em;
+            color: white;
+            text-transform: uppercase;
+          }
+          
+          /*span {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
+          }*/
+          
+          @keyframes caret {
+            50% {
+              border-color: transparent;
+            }
+          }
+    }
+}

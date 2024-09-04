@@ -1,0 +1,98 @@
+.lines-wrap {
+    width: 100%;
+    height: 110%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+
+    .container,
+    .line-inner-wrap {
+        height: 100%
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.line-item {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, .1);
+    height: 100%;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        font-weight: 700;
+        width: 5px;
+        height: 30px;
+        opacity: 0.25;
+    }
+
+    &:nth-of-type(1) {
+        border-left: 1px solid rgba(153, 153, 153, .1);
+
+        &::before {
+            content: '__W';
+            color: $white;
+            left: -3px;
+            background-color: $white;
+            animation: scrolldown 16s ease infinite;
+            animation-delay: 0;
+        }
+    }
+
+    &:nth-of-type(2) {
+        &:before {
+            content: '__C';
+            color: $cyan;
+            left: -3px;
+            background-color: $cyan;
+            animation: scrollup 12s ease infinite;
+            animation-delay: -1s;
+        }
+
+        &::after {
+            content: '__M';
+            color: $magenta;
+            position: absolute;
+            font-weight: 700;
+            width: 5px;
+            height: 30px;
+            right: -3px;
+            opacity: 0.25;
+            background-color: $magenta;
+            animation: scrolldown 13s ease infinite;
+            animation-delay: -2s;
+        }
+    }
+
+    &:nth-of-type(3) {
+        &:before {
+            content: '__Y';
+            color: $yellow;
+            right: -3px;
+            background-color: $yellow;
+            animation: scrollup 14s ease infinite;
+            animation-delay: -3s;
+        }
+    }
+
+    &:nth-of-type(4) {
+        &:before {
+            content: '__K';
+            color: $black;
+            right: -3px;
+            background-color: $black;
+            animation: scrolldown 15s ease infinite;
+            animation-delay: -4s;
+        }
+    }
+}

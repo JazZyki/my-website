@@ -1,0 +1,241 @@
+.btn {
+    display: block;
+    //margin: 10px auto;
+    padding: $font-size $font-size * 2;
+    position: relative;
+    background: none;
+    font-size: .75rem;
+    line-height: .75rem;
+    letter-spacing: .35rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0;
+    opacity: 1;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 0;
+        width: 100%;
+        -webkit-clip: rect(0px, 0px, 0px, 0px);
+        clip: rect(0px, 0px, 0px, 0px);
+    }
+
+    &:before {
+        left: -3px;
+        top: -2px;
+    }
+
+    &:after {
+        left: 2px;
+        bottom: -2px;
+    }
+
+    &:hover:before {
+        animation: glitch-test 1.5s infinite linear alternate-reverse;
+    }
+
+    &:hover:after {
+        animation: glitch-test 2s infinite linear alternate;
+    }
+
+    &:focus,
+    &:focus-within {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+
+    &.btn-white {
+        //margin-top: 100px;
+        color: $white;
+        border: 1px solid $white;
+
+        &:before,
+        &:after {
+            background: $white;
+            color: $basicBlack;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $white;
+            box-shadow: 2px 0 $white;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $white;
+            box-shadow: -1px 0 $white;
+        }
+
+        &:hover {
+            background: white;
+            color: $basicBlack
+        }
+    }
+
+    &.btn-cyan {
+        //margin-top: 100px;
+        color: $cyan;
+        border: 1px solid $cyan;
+
+        &:before,
+        &:after {
+            background: $cyan;
+            color: $basicBlack;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $cyan;
+            box-shadow: 2px 0 $cyan;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $cyan;
+            box-shadow: -1px 0 $cyan;
+        }
+
+        &:hover {
+            background: $cyan;
+            color: $basicBlack
+        }
+    }
+
+    &.btn-magenta {
+        //margin-top: 100px;
+        color: $magenta;
+        border: 1px solid $magenta;
+
+        &:before,
+        &:after {
+            background: $magenta;
+            color: $basicBlack;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $magenta;
+            box-shadow: 2px 0 $magenta;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $magenta;
+            box-shadow: -1px 0 $magenta;
+        }
+
+        &:hover {
+            background: $magenta;
+            color: $basicBlack
+        }
+    }
+
+    &.btn-yellow {
+        //margin-top: 100px;
+        color: $yellow;
+        border: 1px solid $yellow;
+
+        &:before,
+        &:after {
+            background: $yellow;
+            color: $basicBlack;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $yellow;
+            box-shadow: 2px 0 $yellow;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $yellow;
+            box-shadow: -1px 0 $yellow;
+        }
+
+        &:hover {
+            background: $yellow;
+            color: $basicBlack
+        }
+    }
+
+    &.btn-black {
+        //margin-top: 100px;
+        color: $basicBlack;
+        border: 1px solid $basicBlack;
+
+        &:before,
+        &:after {
+            background: $basicBlack;
+            color: $white;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $basicBlack;
+            box-shadow: 2px 0 $basicBlack;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $basicBlack;
+            box-shadow: -1px 0 $basicBlack;
+        }
+
+        &:hover {
+            background: $basicBlack;
+            color: $white;
+        }
+    }
+
+    &.btn-hidden {
+        // hide visibility of this button
+        position: absolute;
+        top: -999px;
+        left: -999px;
+        visibility: hidden;
+    }
+
+    &.btn-close {
+        width: max-content;
+
+        &:focus,
+        &:focus-within {
+            outline-color: $white;
+        }
+    }
+
+    &.btn-offcanvas {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        padding: 1rem;
+        border-color: transparent;
+        font-size: 2rem;
+
+        &:before,
+        &:after {
+            background: $basicBlack;
+            color: $white;
+        }
+
+        &:before {
+            text-shadow: 2px 0 $basicBlack;
+            box-shadow: 2px 0 $basicBlack;
+        }
+
+        &:after {
+            text-shadow: -1px 0 $basicBlack;
+            box-shadow: -1px 0 $basicBlack;
+        }
+
+        &:hover {
+            background: $basicBlack;
+            color: $white;
+        }
+
+        &:focus,
+        &:focus-within,
+        &:focus-visible {
+            outline-color: $white;
+        }   
+    }
+}

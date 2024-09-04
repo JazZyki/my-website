@@ -1,0 +1,40 @@
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    
+    &::after {
+        content: '';
+        display: block;
+        width: 130vw;
+        height: 130vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #0007;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    &.hide {
+        animation: hidePreloader 0.5s ease;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    p {
+        color: $white;
+        text-align: center;
+    }
+}
