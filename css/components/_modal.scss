@@ -20,7 +20,8 @@
         height: 90vh;
         max-height: 90vh;
         min-height: 90vh;
-        background-color: rgba(0, 0, 0, 0.1);
+        background: #030011;
+        background: linear-gradient(180deg, #030011 0%, #001053 100%);
         transform-style: preserve-3d;
         //transform: rotateY(-90deg);
         transition: all 2s ease;
@@ -52,7 +53,8 @@
         width: 0;
         height: 100%;
         padding: 20px;
-        background-color: $basicBlack;
+        background: #030011;
+        background: linear-gradient(180deg, #030011 0%, #001053 100%);
         color: $white;
         opacity: 0;
         transform-style: preserve-3d;
