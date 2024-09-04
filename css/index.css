@@ -18,68 +18,12 @@ body {
   font-size: 16px;
 }
 
-/*
-.modal-curtain {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 10;
-}
-/*
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    display: none;
-    z-index: 100;
+h3 {
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
 }
 
-.modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    //width: 80%;
-    max-width: 240px;
-    border: 2px solid #665;
-    border-radius: 4px;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    gap: 15px;
-    top: calc(50% - 140px);
-    box-shadow: 0 0 20px #444;
-
-    p {
-        font-size: 14px;
-        color: #888;
-    }
-}
-
-.close {
-    color: #888;
-    font-size: 22px;
-    line-height: 15px;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.close:hover,
-.close:focus {
-    color: #171a60;
-    text-decoration: none;
-    cursor: pointer;
-}*/
 @keyframes scrolldown {
   0% {
     top: 0;
@@ -149,7 +93,12 @@ body {
     top: 90%;
   }
 }
-@keyframes glitch-test {
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes glich-button {
   0% {
     clip: rect(-3px, 600px, 0px, 0px);
   }
@@ -203,6 +152,106 @@ body {
   }
   100% {
     clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+@keyframes glitch-anim-1 {
+  0% {
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+            clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+  }
+  10% {
+    -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+            clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+  }
+  20% {
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+            clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+  }
+  30% {
+    -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+            clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+  }
+  40% {
+    -webkit-clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+            clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+            clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+  }
+  60% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+  }
+  70% {
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+            clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+  }
+  80% {
+    -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+            clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  90% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+            clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+  }
+}
+@keyframes glitch-anim-2 {
+  0% {
+    -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+            clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+  }
+  15% {
+    -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+            clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+            clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+  }
+  30% {
+    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+            clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+  }
+  45% {
+    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+            clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+            clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+  }
+  65% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+            clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+            clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  80% {
+    -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+            clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+  }
+  95% {
+    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+            clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+            clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+  }
+}
+@keyframes glitch-anim-flash {
+  0% {
+    opacity: 0.2;
+  }
+  30%, 100% {
+    opacity: 0;
   }
 }
 @keyframes hidePreloader {
@@ -332,10 +381,10 @@ body {
   bottom: -2px;
 }
 .btn:hover:before {
-  animation: glitch-test 1.5s infinite linear alternate-reverse;
+  animation: glich-button 1.5s infinite linear alternate-reverse;
 }
 .btn:hover:after {
-  animation: glitch-test 2s infinite linear alternate;
+  animation: glich-button 2s infinite linear alternate;
 }
 .btn:focus, .btn:focus-within {
   outline: 2px solid transparent;
@@ -617,6 +666,48 @@ body {
   padding-bottom: 10px;
 }
 
+.glitch {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.glitch img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.glitch .glitch__layers {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.glitch .glitch__layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../../images/profil_edited.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.glitch .glitch__layer:nth-child(1) {
+  transform: translateX(-5%);
+  animation: glitch-anim-1 2s infinite linear alternate;
+}
+.glitch .glitch__layer:nth-child(2) {
+  transform: translateX(3%) translateY(3%);
+  animation: glitch-anim-2 2.3s -0.8s infinite linear alternate;
+}
+.glitch .glitch__layer:nth-child(3) {
+  transform: translateX(5%);
+  animation: glitch-anim-flash 1s infinite linear;
+}
+
 /* Modal styling */
 .modal {
   display: none;
@@ -639,7 +730,7 @@ body {
   height: 90vh;
   max-height: 90vh;
   min-height: 90vh;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   transform-style: preserve-3d;
   transition: all 2s ease;
 }
@@ -664,8 +755,9 @@ body {
 .modal .modal-content {
   width: 0;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  background-color: #2c2c2c;
+  color: #ffffff;
   opacity: 0;
   transform-style: preserve-3d;
   transition: all 1s ease-in;
@@ -798,24 +890,6 @@ button#openModalBtn {
   text-align: center;
 }
 
-.section-introduction .modal-wrapper {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.section-introduction .modal-content {
-  background-color: #2c2c2c;
-  color: #ffffff;
-  /*span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-  }*/
-}
-.section-introduction .modal-content h3 {
-  font-size: 2em;
-  color: white;
-  text-transform: uppercase;
-}
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
+.intro-modal.modal-content {
+  padding: 0;
 }/*# sourceMappingURL=index.css.map */

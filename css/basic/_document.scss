@@ -13,69 +13,12 @@ body{
     position: relative;
     overflow: hidden;
     background-color: $basicBlack;
-	//cursor: grab;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     font-size: $font-size;
 }
-/*
-.modal-curtain {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 10;
-}
-/*
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    display: none;
-    z-index: 100;
-}
 
-.modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    //width: 80%;
-    max-width: 240px;
-    border: 2px solid #665;
-    border-radius: 4px;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    gap: 15px;
-    top: calc(50% - 140px);
-    box-shadow: 0 0 20px #444;
-
-    p {
-        font-size: 14px;
-        color: #888;
-    }
-}
-
-.close {
-    color: #888;
-    font-size: 22px;
-    line-height: 15px;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.close:hover,
-.close:focus {
-    color: #171a60;
-    text-decoration: none;
-    cursor: pointer;
-}*/
+h3 {
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+  }
