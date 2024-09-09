@@ -1,12 +1,12 @@
 .btn {
     display: block;
-    //margin: 10px auto;
+    width: max-content;
     padding: $font-size $font-size * 2;
     position: relative;
     background: none;
     font-size: .75rem;
     line-height: .75rem;
-    letter-spacing: .35rem;
+    letter-spacing: .20rem;
     text-align: center;
     text-transform: uppercase;
     border-radius: 0;
@@ -74,7 +74,35 @@
 
         &:hover {
             background: white;
-            color: $basicBlack
+            color: $basicBlack;
+            opacity: 1;
+        }
+
+        &.btn-cta {
+            background: $white;
+            color: $basicBlack;
+            border: 1px solid $white;
+
+            &:before,
+            &:after {
+                background: $white;
+                color: $basicBlack;
+            }
+
+            &:before {
+                text-shadow: 2px 0 $white;
+                box-shadow: 2px 0 $white;
+            }
+
+            &:after {
+                text-shadow: -1px 0 $white;
+                box-shadow: -1px 0 $white;
+            }
+
+            &:hover {
+                background: transparent;
+                color: $white;
+            }
         }
     }
 

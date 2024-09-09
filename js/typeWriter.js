@@ -41,7 +41,7 @@ export function typeWriter() {
                 StartTextAnimation(i + 1);
             });
         }
-    }
+    }istTyp
 
     StartTextAnimation(0);
 }
